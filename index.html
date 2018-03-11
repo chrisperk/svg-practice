@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>SVG Practice</title>
+    <link rel="stylesheet" type="style/css" href="styles.css">
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <?xml version="1.0" standalone="no"?>
+    <svg width="500" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+        <rect id="my-rect" x="10" y="10" width="80" height="80" stroke="black" fill="transparent" stroke-width="5"/>
+
+        <animate 
+            xlink:href="#my-rect"
+            attributeName="width"
+            from="80"
+            to="300" 
+            dur="1s"
+            begin="click"
+            fill="freeze" />
+    </svg>
+
+    <script src="script.js"></script>
+</body>
