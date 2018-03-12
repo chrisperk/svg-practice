@@ -4,5 +4,5 @@ const rect = document.querySelector('.rect');
 
 rect.addEventListener('click', function () {
     console.log(this);
-    this.classList.add('green');
+    this.classList.toggle('green');
 })

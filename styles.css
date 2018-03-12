@@ -4,6 +4,11 @@ h1 {
 
 .sample .rect {
     fill: #8f4949;
+    transition: transform 1s;
+}
+
+.sample .rect:hover {
+    transform: scale(1.5);
 }
 
 .sample .green {
